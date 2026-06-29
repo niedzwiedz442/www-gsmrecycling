@@ -47,7 +47,7 @@
         <div id="mobile-menu" class="lg:hidden border-t border-gray-100/60 bg-white/95 backdrop-blur-lg">
             <nav class="flex flex-col px-6 sm:px-10 py-10 space-y-6">
                 <a href="#home" class="lato text-lg tracking-tight text-gray-600 hover:text-[var(--accent)] transition-colors duration-300">Home</a>
-                <a href="#about" class="lato text-lg tracking-tight text-gray-600 hover:text-[var(--accent)] transition-colors duration-300">O nas</a>
+                <a href="#about" class="lato text-lg tracking-tight text-gray-600 hover:text-[var(--accent)] transition-colors duration-300">O inicjatywie</a>
                 <a href="#how-it-works" class="lato text-lg tracking-tight text-gray-600 hover:text-[var(--accent)] transition-colors duration-300">Jak to działa?</a>
                 <a href="#contact" class="lato text-lg tracking-tight text-gray-600 hover:text-[var(--accent)] transition-colors duration-300">Kontakt</a>
             </nav>
@@ -56,7 +56,7 @@
 
     <main class="pt-[12vh]">
         <!-- ===== HERO ===== -->
-        <section class="relative overflow-hidden">
+        <section id="home" class="relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
                 <div class="flex flex-col-reverse lg:flex-row items-center gap-14 lg:gap-20 min-h-[calc(100vh-12vh)] py-14 lg:py-0">
 
@@ -65,16 +65,16 @@
                             Telefon. Mała rzecz, a śmieci.
                         </h1>
                         <p class="lato text-base md:text-lg text-gray-600 leading-relaxed mb-4">
-                            Przyjmiemy stare, zepsute, niepotrzebne telefony! Poddamy je recyclingowi, tak żeby ich wpływ na środowisko był jak najmniejszy.
+                            Znalazłeś swój stary telefon i chcesz się go pozbyć?<br/>Oddaj go nam, a my postaramy się odzyskać z niego jak najwięcej.
                         </p>
                         <p class="lato text-sm text-gray-500 mb-10">
                             Ofertę kierujemy do osób prywatnych oraz do firm.
                         </p>
                         <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-                            <a href="#private" class="lato-bold text-base text-white bg-[var(--accent)] hover:brightness-110 px-9 py-3.5 rounded-full transition-all duration-300 cursor-pointer">
+                            <a href="#klienci-indywidualni" class="lato-bold text-base text-white bg-[var(--accent)] hover:brightness-110 px-9 py-3.5 rounded-full transition-all duration-300 cursor-pointer">
                                 Prywatnie
                             </a>
-                            <a href="#company" class="lato-bold text-base text-[var(--accent)] border-2 border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white px-9 py-3 rounded-full transition-all duration-300 cursor-pointer">
+                            <a href="#firmy" class="lato-bold text-base text-[var(--accent)] border-2 border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white px-9 py-3 rounded-full transition-all duration-300 cursor-pointer">
                                 Firma
                             </a>
                         </div>
@@ -84,6 +84,65 @@
                         <div class="rounded-2xl overflow-hidden shadow-lg w-full max-w-md lg:max-w-none">
                             <img src="./assets/img/hero-image.jpg" alt="Stare telefony komórkowe przeznaczone do recyklingu" class="w-full h-auto max-h-64 lg:max-h-[75vh] object-cover">
                         </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ===== ABOUT ===== -->
+        <section id="about" class="py-20 lg:py-28">
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+                <div class="flex flex-col lg:flex-row items-center gap-14 lg:gap-20">
+
+                    <div class="w-full lg:w-1/2 flex justify-center">
+                        <div class="rounded-2xl overflow-hidden w-full max-w-sm">
+                            <img src="./assets/img/recycling.png" alt="Telefony komórkowe przeznaczone do recyklingu" class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:w-1/2 text-center lg:text-left">
+                        <h2 class="lato-bold text-2xl md:text-3xl lg:text-4xl leading-tight text-gray-800 mb-6">
+                            Przyjmuje telefony, które lata swojej młodości mają już za sobą.
+                        </h2>
+                        <p class="lato text-base md:text-lg text-gray-600 leading-relaxed mb-4">
+                            Poddamy je recyclingowi, tak żeby ich wpływ na środowisko był jak najmniejszy.
+                        </p>
+                        <p class="lato text-base text-gray-600 leading-relaxed">
+                            Zamiast trzymać niepotrzebne telefony w szufladzie, oddaj je nam. Sprawne urządzenia zyskują drugie życie, a zepsute poddajemy recyclingowi w sposób bezpieczny dla środowiska. <span class="lato-bold">Włącz się w działania na rzecz ochrony planety.</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HOW IT WORKS ===== -->
+        <section id="how-it-works" class="py-20 lg:py-28 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+                <h2 class="lato-bold text-2xl md:text-3xl lg:text-4xl leading-tight text-gray-800 text-center mb-14">
+                    Jak to działa?
+                </h2>
+
+                <div class="flex flex-col lg:flex-row gap-8">
+
+                    <div id="klienci-indywidualni" class="w-full lg:w-1/2 bg-white rounded-2xl p-8 shadow-sm">
+                        <i data-lucide="user" class="w-10 h-10 text-[var(--accent)] mb-5"></i>
+                        <h3 class="lato-bold text-xl md:text-2xl text-gray-800 mb-4">
+                            Klienci indywidualni
+                        </h3>
+                        <p class="lato text-base text-gray-600 leading-relaxed">
+                            Oddaj nam swój stary, nieużywany telefon, a my zajmiemy się jego bezpiecznym recyklingiem. Sprawne urządzenia zyskują drugie życie, a zepsute przetwarzamy w sposób przyjazny dla środowiska, minimalizując ich negatywny wpływ na planetę.
+                        </p>
+                    </div>
+
+                    <div id="firmy" class="w-full lg:w-1/2 bg-white rounded-2xl p-8 shadow-sm">
+                        <i data-lucide="users" class="w-10 h-10 text-[var(--accent)] mb-5"></i>
+                        <h3 class="lato-bold text-xl md:text-2xl text-gray-800 mb-4">
+                            Firmy
+                        </h3>
+                        <p class="lato text-base text-gray-600 leading-relaxed">
+                            Oferujemy kompleksową utylizację elektroodpadów firmowych – odbieramy zużyty sprzęt elektroniczny, transportujemy go i przetwarzamy zgodnie z obowiązującymi normami. Doradzamy w kwestii gospodarki odpadami w Twojej organizacji.
+                        </p>
                     </div>
 
                 </div>
