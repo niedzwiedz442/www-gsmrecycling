@@ -1,1 +1,5 @@
-@import "font.css"
+@import "font.css";
+
+:root {
+   --jade-green: #3BC14A; 
+}
