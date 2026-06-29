@@ -1,5 +1,3 @@
-@import "font.css";
-
 :root {
-   --jade-green: #3BC14A; 
+    --accent: rgb(109, 197, 73);
 }
