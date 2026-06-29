@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100/60 bg-white/95 backdrop-blur-lg">
+        <div id="mobile-menu" class="lg:hidden border-t border-gray-100/60 bg-white/95 backdrop-blur-lg">
             <nav class="flex flex-col px-6 sm:px-10 py-10 space-y-6">
                 <a href="#home" class="lato text-lg tracking-tight text-gray-600 hover:text-[var(--accent)] transition-colors duration-300">Home</a>
                 <a href="#about" class="lato text-lg tracking-tight text-gray-600 hover:text-[var(--accent)] transition-colors duration-300">O nas</a>
@@ -69,7 +69,7 @@
             var iconX = document.getElementById('icon-x');
             if (btn && menu && iconMenu && iconX) {
                 btn.addEventListener('click', function() {
-                    menu.classList.toggle('hidden');
+                    menu.classList.toggle('open');
                     iconMenu.classList.toggle('hidden');
                     iconX.classList.toggle('hidden');
                 });
