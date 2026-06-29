@@ -148,6 +148,62 @@
                 </div>
             </div>
         </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="py-20 lg:py-28 bg-white scroll-mt-[12vh]">
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+
+                <div class="max-w-xl mx-auto">
+                    <h3 class="lato-bold text-2xl md:text-3xl text-gray-800 text-center mb-10">
+                        Masz pytanie? Napisz do nas.
+                    </h3>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                        <!--
+                        =============================================
+                        Formularz używa Web3Forms (web3forms.com).
+                        Aby zaczął działać:
+                          1. Wejdź na https://web3forms.com/
+                          2. Podaj swój email i pobierz darmowy access_key
+                          3. Wklej go poniżej w wartość pola "access_key"
+                        =============================================
+                        -->
+                        <input type="hidden" name="access_key" value="4de1f27b-e927-4fa3-ac82-7ae3c74ca8ab">
+
+                        <div>
+                            <label for="name" class="sr-only">Imię i nazwisko</label>
+                            <input type="text" id="name" name="name" placeholder="Imię i nazwisko" required
+                                class="w-full px-5 py-3.5 lato text-base text-gray-800 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20 transition-all duration-300 placeholder:text-gray-400">
+                        </div>
+
+                        <div>
+                            <label for="email" class="sr-only">Adres email</label>
+                            <input type="email" id="email" name="email" placeholder="Adres email" required
+                                class="w-full px-5 py-3.5 lato text-base text-gray-800 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20 transition-all duration-300 placeholder:text-gray-400">
+                        </div>
+
+                        <div>
+                            <label for="subject" class="sr-only">Tytuł wiadomości</label>
+                            <input type="text" id="subject" name="subject" placeholder="Tytuł wiadomości" required
+                                class="w-full px-5 py-3.5 lato text-base text-gray-800 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20 transition-all duration-300 placeholder:text-gray-400">
+                        </div>
+
+                        <div>
+                            <label for="message" class="sr-only">Treść</label>
+                            <textarea id="message" name="message" placeholder="Treść" required rows="5"
+                                class="w-full px-5 py-3.5 lato text-base text-gray-800 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20 transition-all duration-300 placeholder:text-gray-400 resize-none"></textarea>
+                        </div>
+
+                        <div class="text-center pt-2">
+                            <button type="submit"
+                                class="lato-bold text-base text-white bg-[var(--accent)] hover:brightness-110 hover:shadow-md px-10 py-3.5 rounded-full transition-all duration-300 cursor-pointer">
+                                Wyślij
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
