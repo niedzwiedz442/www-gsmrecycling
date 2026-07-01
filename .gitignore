@@ -36,3 +36,10 @@ Temporary Items
 
 # End of https://www.toptal.com/developers/gitignore/api/macos
 
+# Node.js / npm
+node_modules/
+package-lock.json
+
+# Generated assets (build on deploy or keep committed for simple static hosts)
+# assets/css/tailwind-output.css
+

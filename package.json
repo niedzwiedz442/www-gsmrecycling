@@ -1,0 +1,29 @@
+{
+  "name": "www-gsmrecycling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind-output.css --minify",
+    "build:html": "html-minifier-terser --collapse-whitespace --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype --minify-css true --minify-js true index.html -o index.html",
+    "build": "npm run build:css && npm run build:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niedzwiedz442/www-gsmrecycling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/niedzwiedz442/www-gsmrecycling/issues"
+  },
+  "homepage": "https://github.com/niedzwiedz442/www-gsmrecycling#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "html-minifier-terser": "^7.2.0",
+    "lucide": "^1.22.0",
+    "tailwindcss": "^4.3.2"
+  }
+}

@@ -1,6 +1,7 @@
 @font-face {
     font-family: Bitsumishi;
-    src: url(../font/Bitsumishi.ttf);
+    src: url(../font/Bitsumishi.woff2) format('woff2'),
+         url(../font/Bitsumishi.ttf) format('truetype');
 }
 
 .bitsumishi {
